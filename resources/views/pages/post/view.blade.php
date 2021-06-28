@@ -15,8 +15,8 @@ My Post
             <div class="float-right">
                 <a href="http://127.0.0.1:8000/pdf" class="btn btn-primary"><i class="fa fa-plus"></i>Cetak Data</a>
             </div>
-            
-            
+
+
         </div>
         <br>
         <div class="col-md-12">
@@ -33,9 +33,9 @@ My Post
             <table class="table table-bordered">
         <thead class="thead-light">
             <tr>
-                <th>Nomor Surat</th> 
-                <th>Tanggal Surat</th> 
-                <th>Pengirim</th>          
+                <th>Nomer Kendaraan</th>
+                <th>Merk Kendaraan</th>
+                <th>Tipe Kendaraan</th>
                 <th>Posted Date</th>
                 <th>Updated</th>
                 <th>Action</th>
@@ -44,9 +44,9 @@ My Post
         <tbody>
           @forelse ($posts as $post)
               <tr>
-              <th>{{ $post->nomorsurat }}</th>
-              <td>{{ $post->tanggalsurat }}</td>
-              <td>{{ $post->pengirimt }}</td>
+              <th>{{ $post->nopol }}</th>
+              <td>{{ $post->merk }}</td>
+              <td>{{ $post->tipe }}</td>
               <td>{{ $post->created_at }}</td>
               <td>{{ $post->updated }}</td>
               <td>
@@ -60,10 +60,10 @@ My Post
                       @method('DELETE')
                       <button class="btn btn-danger btn-sm" type="submit">Delete</button>
                     </form>
-                    <form action="/upload-file" method="POST" enctype="multipart/formdata"> 
+                    <form action="/upload-file" method="POST" enctype="multipart/formdata">
   @csrf
-  <input type="file" name="berkas"> 
-  <input type="submit" value="Unggah"> 
+  <input type="file" name="berkas">
+  <input type="submit" value="Unggah">
 </form>
 
                   </div>

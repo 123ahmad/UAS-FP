@@ -30,23 +30,23 @@
       <form action="{{ route('post.store') }}" method="POST">
         @csrf
         <div class="form-group">
-          <label for="nomorsurat">Nomor Surat :</label>
-          <input type="text" class="form-control" id="nomorsurat" name="nomorsurat" required>
+          <label for="nopol">Nomer Kendaraan :</label>
+          <input type="text" class="form-control" id="nopol" name="nopol" required>
         </div>
         <div class="form-group">
-          <label for="tanggalsurat">Tanggal Surat:</label>
-          <textarea name="tanggalsurat" class="form-control" id="tanggalsurat" rows="5" required></textarea>
+          <label for="merk">Merk Kendaraan:</label>
+          <textarea name="merk" class="form-control" id="merk" rows="5" required></textarea>
         </div>
         <div class="form-group">
-          <label for="pengirim">Pengirim:</label>
-          <textarea name="pengirim" class="form-control" id="pengirim" rows="5" required></textarea>
+          <label for="tipe">Tipe Kendaraan:</label>
+          <textarea name="tipe" class="form-control" id="tipe" rows="5" required></textarea>
         </div>
-        
+
         <button type="submit" class="btn btn-primary">Submit Post</button>
       </form>
         </div>
     </div>
-    
+
 </div>
 <x-footer />
 @endsection

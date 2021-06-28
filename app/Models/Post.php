@@ -10,12 +10,10 @@ use App\User;
 
 class Post extends Model
 {
-    protected $fillable = ['nomorsurat', 'tanggalsurat', 'pengirim', 'user_id'];
+    protected $fillable = ['nopol', 'merk', 'tipe', 'user_id'];
 
     public function user()
     {
         return $this->belongsTo(User::class, 'user_id');
     }
 }
-
-

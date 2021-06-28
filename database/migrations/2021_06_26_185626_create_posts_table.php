@@ -15,11 +15,11 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('nomorsurat');
-            $table->string('tanggalsurat');
-            $table->string('pengirim');
+            $table->string('nopol');
+            $table->string('merk');
+            $table->string('tipe');
             // $table->integer('user_id');
-            
+
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

@@ -52,7 +52,7 @@
                         {{-- dashboard menu --}}
                         <li class="nav-item dropdown">
                         <a class="nav-link" href="{{ url('/dashboard') }}">
-                                Dashboard 
+                                Dashboard
                             </a>
                         </li>
                         <li class="nav-item dropdown">
@@ -61,7 +61,7 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ url('/post') }}">Post</a>
+                                <a class="dropdown-item" href="{{ url('/post') }}">Data Kendaran</a>
                                 <a class="dropdown-item" href="{{ url('/post/create') }}">Create</a>
                                 <a class="dropdown-item" href="{{ url('/post') }}">Update</a>
                                 <a class="dropdown-item" href="{{ url('/post') }}">Cetak Data</a>
@@ -86,7 +86,7 @@
                                     </form>
                                 </div>
                             </li>
-                            
+
                         @endguest
                     </ul>
                 </div>

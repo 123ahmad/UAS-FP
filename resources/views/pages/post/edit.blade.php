@@ -32,16 +32,16 @@
 				@csrf
                 @method('PUT')
 				<div class="form-group">
-					<label for="nomorsurat">Nomor Surat:</label>
+					<label for="nopol">Nomer Kendaraan:</label>
 					<input type="text" required class="form-control" id="nama" name="nama" value="{{ $post->nama }}">
 				</div>
 				<div class="form-group">
-					<label for="tanggalsurat">Tanggal Surat:</label>
-					<textarea name="tanggalsurat" class="form-control" id="tanggalsurat" rows="5" required>{{ $post->nip }}</textarea>
+					<label for="merk">Merk Kendaraan:</label>
+					<textarea name="merk" class="form-control" id="merk" rows="5" required>{{ $post->nip }}</textarea>
 				</div>
 				<div class="form-group">
-					<label for="pengirim">Pengirim:</label>
-					<textarea name="pengirimt" class="form-control" id="pengirim" rows="5" required>{{ $post->alamat }}</textarea>
+					<label for="tipe">Tipe Kendaraan:</label>
+					<textarea name="tipe" class="form-control" id="tipe" rows="5" required>{{ $post->alamat }}</textarea>
 				</div>
 				<div class="form-group">
 				<label for="status">Select post status</label>

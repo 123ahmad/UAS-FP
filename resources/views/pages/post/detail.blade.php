@@ -20,15 +20,15 @@
         <div class="col-md-12">
             <br><br>
         	<div class="post-title">
-                <strong>Nomor Surat: </strong> {{ $post->nomorsurat }}
+                <strong>Nomer Kendaraan: </strong> {{ $post->nopol }}
             </div>
             <br>
             <div class="post-description">
-                <strong>Tanggal Surat: </strong> {{ $post->tanggalsurat }}
+                <strong>Merk Kendaraan: </strong> {{ $post->merk }}
             </div>
             <br>
             <div class="post-description">
-                <strong>Pengirim: </strong> {{ $post->pengirim }}
+                <strong>Tipe Kendaraan: </strong> {{ $post->tipe }}
             </div>
         </div>
     </div>
